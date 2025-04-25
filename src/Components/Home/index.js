@@ -1,9 +1,16 @@
+import {useNavigate} from 'react-router-dom';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header  from '../Header';
+import ScrollToTop from '../ScrollToTop';
 import {
     propertyData, 
     propertGallery, 
-    ourServices
+    ourServices, 
+    testimonialData
 } from '../Data';
+import Footer from '../Footer';
 import {
     BackgroundContainer, 
     HomeBackgroundImg, 
@@ -38,12 +45,52 @@ import {
     ServiceImagesContainer, 
     ServiceImage, 
     DisplayServicesData, 
-    ServiceHeading
+    ImageGalleryContainer, 
+    ArrowIcon, 
+    ImageContainer, 
+    DescriptionContent, 
+    TestimonialBgContainer, 
+    TestimonialHeading, 
+    TestimonialContainer, 
+    TestimonialListItem, 
+    TestimonialItem, 
+    TestimonialMessage, 
+    TestimonialUserName, 
+    TestimonialStartRatingNameContainer,
+    TestimonialMessageContainer, 
+    Comma, 
+    CommaContainer, 
+    StarContainer, 
+    Star
 } from "./styledComponents"; 
 
-import Footer from '../Footer';
+
 
 const Home = () => {
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500, 
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed: 2000, 
+        pauseOnHover: true,
+        arrows:false, 
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: { slidesToShow: 2 }
+            },
+            {
+                breakpoint: 600,
+                settings: { slidesToShow: 1 }
+            }
+        ]
+      };
+
+      const navigate = useNavigate();
+
     return(
         <BackgroundContainer>
             {/*  */}
@@ -64,9 +111,9 @@ const Home = () => {
                 <HomeDescription>
                 Get 100% Genuine & Verified property Customer
                 </HomeDescription>
-                <ContactUsButton>Contact Us</ContactUsButton>
+                <ContactUsButton onClick={()=>{navigate('/gallery')}}>Explore Our Gallery<ArrowIcon/></ContactUsButton>
             </HomeBackgroundImg>
-   
+
             {/*  */}
             <HomeAboutUsContainer>
                 <HomeAboutUsHeading>
@@ -76,12 +123,14 @@ const Home = () => {
                 Welcome to Nirmal Dhenu Infra <br/> <StytleSpan>Your Trusted Partner in Premium Plot Investments!</StytleSpan>
                 </HomeAboutUsNirmalDhenu>
                 <HomeAboutUsDescription>
-                Nirmal Dhenu Infra is a premier real estate company specializing in premium plotted developments. With a vision to create thriving communities and investment opportunities, we are dedicated to providing strategically located, well-planned plots that offer long-term value and growth.
-                With years of expertise in the real estate sector, we understand the importance of land as a secure and appreciating asset. Our commitment to quality, transparency, and customer satisfaction ensures that every plot we offer is legally clear, well-developed, and ready for future growth.
-                At Nirmal Denu Infra, we believe in ethical business practices and a customer-first approach. Whether you are looking for a plot to build your dream home or a high-value investment opportunity, our expert team is here to guide you every step of the way.
-                Join us in shaping the future of real estate with smart land investments. Discover the Nirmal Dhenu Infra advantage today!
+                Nirmal Dhenu Infra is a premier real estate company specializing in 
+                premium plotted developments. With a vision to create thriving communities 
+                and investment opportunities, we are dedicated to providing strategically 
+                located, well-planned plots that offer long-term value and growth.Our commitment 
+                to quality, transparency, and customer satisfaction ensures that every 
+                plot we offer is legally clear, well-developed, and ready for future growth.
                 </HomeAboutUsDescription>
-                <Button>
+                <Button onClick={()=>{navigate('/about-us')}}>
                     KNOW MORE ABOUT US 
                 </Button>
             </HomeAboutUsContainer>
@@ -99,8 +148,9 @@ const Home = () => {
                         propertyData.map(({id, name, description, img}) => (
                             <DisplayListItem key={id}>
                                 <Heading>{name}</Heading>
+                                <ImageContainer>
                                 <Img src={img} alt={`${id}-${name}`} />
-
+                                </ImageContainer>
                                 <Description>
                                     {description}
                                 </Description>
@@ -123,13 +173,15 @@ const Home = () => {
                     {
                         propertGallery.map(({id, galleryImg})=>(
                             <DiplayHomeGalleryImg key={id}>
+                                <ImageGalleryContainer>
                                 <GalleryImg src={galleryImg} />
+                                </ImageGalleryContainer>
                             </DiplayHomeGalleryImg>
                         ))
                     }
 
                 </DisplayHomeGallery>
-                <Button>
+                <Button onClick={()=>{navigate('/gallery')}}>
                     EXPLORE GALLERY 
                 </Button>
             </HomeGalleryContainer>
@@ -137,11 +189,11 @@ const Home = () => {
             {/*  */}
             <OurServicesBgContainer>
                 <OurServiceHeading>OUR FEATURED SERVICES</OurServiceHeading>
-                <Description>
+                <DescriptionContent>
                 We offer comprehensive services that simplify every aspect of land buying, selling, 
                 and investment. With a focus on transparency, customer satisfaction, and expert guidance, 
                 we help you make informed property decisions with confidence.
-                </Description>
+                </DescriptionContent>
                 <DisplayServicesData>
                     {
                         ourServices.map(({id, img, name, description})=>(
@@ -158,8 +210,36 @@ const Home = () => {
                     }
                 </DisplayServicesData>
             </OurServicesBgContainer>
-            
+            <HrLine/>
+            {/* Testimonial */}
+            <TestimonialBgContainer>
+                <TestimonialHeading>TESTIMONIAL</TestimonialHeading>
+                <TestimonialContainer>
+                <Slider {...settings}>
+                    {
+                        testimonialData.map(({id, name, color,nameColor, message})=>(
+                            <TestimonialListItem key={id}>
+                                <TestimonialItem>
+                                    <TestimonialMessageContainer color={color}>
+                                        <CommaContainer>
+                                        <Comma/><Comma/>
+                                        </CommaContainer>
+                                <TestimonialMessage>{message}</TestimonialMessage>
+                                </TestimonialMessageContainer>
+                                <TestimonialStartRatingNameContainer>
+                                <TestimonialUserName color={color}>{name}</TestimonialUserName>
+                                <StarContainer><Star/><Star/><Star/><Star/><Star/></StarContainer>
+                                </TestimonialStartRatingNameContainer>
+                                
+                                </TestimonialItem>
+                            </TestimonialListItem>
+                        ))
+                    }
+                    </Slider>
+                </TestimonialContainer>
+            </TestimonialBgContainer>
             <Footer/>
+            <ScrollToTop/>
         </BackgroundContainer>
         
     )

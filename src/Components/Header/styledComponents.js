@@ -1,13 +1,18 @@
 import styled from "styled-components";
-import { IoIosArrowDown } from "react-icons/io";
+import {Link} from 'react-router-dom';
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
+export const StyledLink = styled(Link)`
+text-decoration:none;
+color:inherit;
+`;
 export const HeaderComponents = styled.header`
 position:fixed;
 top:0;  
 width:100%;
-background-color:#2A491D;
+background-color: #2A491D;
 height:100px;
 z-index:2;
 `
@@ -26,24 +31,24 @@ margin-left:20px;
 `
 
 export const MenuIcon = styled(GiHamburgerMenu)`
-@media screen and (min-width:601px){
+@media screen and (min-width:701px){
 display:none
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
 display:block;
-color:#555555;
+color: #ffffff;
 font-size:30px;
 margin-right:20px;
 cursor:pointer;
 }
 `
 export const CloseMenuIcon = styled(ImCross)`
-@media screen and (min-width:601px){
+@media screen and (min-width:701px){
 display:none
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
 display:block;
-color:#555555;
+color: #ffffff;
 font-size:25px;
 margin-right:20px;
 cursor:pointer;
@@ -51,61 +56,66 @@ cursor:pointer;
 `
 
 export const NavListItems = styled.ul`
-@media screen and (min-width:601px){
+@media screen and (min-width:701px){
 display:flex;
-flex-direciton:row;
+flex-direction: row;
 margin-right:20px;
 list-style-type:none;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
 display:none;
 }
 `
-export const SmallScreenNavListItemsContainer = styled.div`
-@media screen and (min-width:601px){
+
+export const SideBarContainer = styled.div`
+@media screen and (min-width:701px){
 display:none;
 }
-@media screen and (max-width:600px){
-display:flex;
-flex-direction:column;
-background-color:#ffffff;
+@media screen and (max-width:700px){
 position:fixed;
 top:100px;
+right:0;
 height:100%;
+width:80%;
+background-color: #2A491D;
+display:flex;
+flex-direction:column;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+overflow:auto;
+}
+`
+
+export const SmallScreenNavListItems = styled.ul`
+@media screen and (min-width:701px){
+display:none;
+}
+@media screen and (max-width:700px){
+display:flex;
+flex-direction:column;
+background-color: #2A491D;
+// border:solid 1px red;
 right:0;
 width:100%;
-z-index:1;
-background-color:rgba(71, 118, 38, 1);
-}
-`
-export const SmallScreenNavListItems = styled.ul`
-@media screen and (min-width:601px){
-display:none;
-}
-@media screen and (max-width:600px){
-display:flex;
-flex-direction:column;
-background-color:#ffffff;
-position:fixed;
-top:100px;
-height:100%;
-right:0;
-width:80%;
 z-index:2;
 `
 
 export const NavItems = styled.li`
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
 display:flex;
-flex-direction:row;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 padding:12px;   
 cursor:pointer;
+color: #ffffff;
+position:relative;
+&:hover{
+background-color:#c84241;
+}
 
 }
-@media screen and (min-width:601px){
-color:#ffffff;
+@media screen and (min-width:701px){
+color: #ffffff;
 font-weight:bold;
 display:flex;
 flex-direction:row;
@@ -130,18 +140,41 @@ transition-timing-function:ease;
 width:100%;
 }
 &:hover{
-color:#c84241;
+color: #c84241;
 font-weight:bold;
 }
 }
 
-color:${(props)=>props.onactive ? "#c84241" : 'inherit'};
+color:${(props)=>props.onactive ? " #c84241" : 'inherit'};
 font-weight:${(props)=>props.onactive ? "bold" : 'normal'};
 `
 
-export const ArrowIcon = styled(IoIosArrowDown)`
-  transform: ${({ onactive }) => (onactive ? "rotate(180deg)" : "rotate(0deg)")};
-  transition-propert:transfrom;
-  transition-duration:0.6s;
-  transition-timing-function:ease-in-out;
+
+
+
+export const NirmalDhenuCompanyLogoContainer = styled.div`
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+`;
+
+export const CompanyName = styled.h1`
+color:#ffffff;
+font-size:16px;
 `
+
+export const Description = styled.p`
+color:#ffffff;
+font-size:12px;
+`
+
+export const NirmalDhenuCompanyLogo = styled.img`
+  height: 200px;
+`;

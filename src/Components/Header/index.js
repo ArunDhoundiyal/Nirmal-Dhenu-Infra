@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import {useLocation} from 'react-router-dom';
+
 import {
     HeaderComponents, 
     Navbar, 
@@ -6,60 +8,101 @@ import {
     SmallScreenNavListItems,
     NavItems, 
     CompanyLogo, 
-    ArrowIcon, 
     MenuIcon, 
     CloseMenuIcon, 
-    SmallScreenNavListItemsContainer
+    SideBarContainer, 
+    NirmalDhenuCompanyLogoContainer, 
+    NirmalDhenuCompanyLogo, 
+    CompanyName, 
+    Description, 
+    StyledLink
 } from './styledComponents';
 import {navHeaderData} from '../Data';
-import Project from '../Project';
 const Header = () => {
-    const [navItemId, setNavItemId] = useState(null);
     const [menuIcon, setMenuIcon] = useState(false);
-
-    const onClickNavItem = (id) => {
-        setNavItemId(id)
-    }
+    const location = useLocation();
+    const checkCurrentPath = location.pathname;
+    console.log(checkCurrentPath);
+    
     const onClickMenuIcon = () => {
         setMenuIcon(preState => !preState);
 
     }
-    console.log(navItemId)
     return(
         <HeaderComponents>
-            <Project setNavItemId={setNavItemId} navItemId={navItemId}/>
+          
         <Navbar>
+            <StyledLink to='/'>
             <CompanyLogo 
             src='https://res.cloudinary.com/da52fiag8/image/upload/v1743677603/Nirmal_dhenu_RE_white_bg_logo_roe2pd.png' 
             alt='nirmal-dhenu-infra-logo' 
             />
+            </StyledLink>
             {
-                menuIcon ? <CloseMenuIcon onClick={onClickMenuIcon}/> : <MenuIcon onClick={onClickMenuIcon}/>
+                menuIcon ? <CloseMenuIcon onClick={onClickMenuIcon} aria-label="Close navigation menu" /> : <MenuIcon onClick={onClickMenuIcon} aria-label="Open navigation menu" />
             }
             {
-            menuIcon && <SmallScreenNavListItemsContainer isactive={menuIcon}>{
-               menuIcon && <SmallScreenNavListItems isactive={menuIcon}>
-                    {
-                    navHeaderData.map(({id, name})=>{
-                        if (id===3){
-                            return (
-                            <NavItems 
-                            onactive={navItemId===id} 
-                            onClick={()=>{onClickNavItem(id)}} 
-                            key={id}>{name}<ArrowIcon onactive={navItemId===id} />
-                            </NavItems>
-                            ) 
-                        } 
-                        return <NavItems onactive={navItemId===id}  onClick={()=>{onClickNavItem(id)}} key={id}>{name}</NavItems>})
-                        }
-                </SmallScreenNavListItems>
-                }</SmallScreenNavListItemsContainer>
+            menuIcon && (
+            <SideBarContainer>
+              <SmallScreenNavListItems>
+                {
+                navHeaderData.map(({ id, name, path }) => {
+                  if (id === 6) {
+                    return (
+                    <NavItems 
+                    key={id}
+                    >
+                      {name} 
+                    </NavItems>
+                    );
+                  }
+                  return (
+                  <NavItems 
+                  key={id} 
+                  onactive={checkCurrentPath===path}
+                  >
+                    <StyledLink to={path}>{name}</StyledLink> 
+                </NavItems>
+                );
+              })
             }
+            </SmallScreenNavListItems>            
+            <NirmalDhenuCompanyLogoContainer>
+                <NirmalDhenuCompanyLogo
+                    src='https://res.cloudinary.com/da52fiag8/image/upload/v1743677603/Nirmal_dhenu_RE_white_bg_logo_roe2pd.png'
+                    alt='nirmal-dhenu-company-logo'
+                />
+                <CompanyName>Nirmal Dhenu Infra</CompanyName>
+                <Description>Building Dreams with Trust & Transparency</Description>
+            </NirmalDhenuCompanyLogoContainer>
+        </SideBarContainer>
+    )
+}
             <NavListItems>
                 {
-                    navHeaderData.map(({id, name})=>{
-                        if (id===3) return <NavItems onactive={navItemId===id} onClick={()=>{onClickNavItem(id)}} key={id}>{name}<ArrowIcon onactive={navItemId===id} /></NavItems>
-                        return <NavItems onactive={navItemId===id}  onClick={()=>{onClickNavItem(id)}} key={id}>{name}</NavItems>
+                    navHeaderData.map(({id, name, path})=>{
+                      if (id === 6){
+                        return (
+                          <NavItems 
+                          key={id}>
+                            {name}
+                          </NavItems>
+
+                        )
+
+                      }
+                      return(
+                        <NavItems 
+                        key={id} 
+                        onactive={checkCurrentPath===path}
+                        >   
+                        <StyledLink to={path}>
+                        {name}
+                        </StyledLink>                     
+                        </NavItems>
+
+                      )
+
                     })
                 }
             </NavListItems>
