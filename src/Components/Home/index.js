@@ -1,4 +1,5 @@
 import {useNavigate} from 'react-router-dom';
+import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +17,7 @@ import {
     HomeBackgroundImg, 
     HomeHeading, 
     HomeDescription, 
-    CompanyLogoContainer,
+    RestStar,
     CompanyLogo, 
     ContactUsButton, 
     HomeAboutUsContainer, 
@@ -38,7 +39,6 @@ import {
     DisplayHomeGallery, 
     DiplayHomeGalleryImg, 
     GalleryImg, 
-    HrLine, 
     OurServicesBgContainer, 
     OurServiceHeading, 
     DisplayServicesItems, 
@@ -96,26 +96,26 @@ const Home = () => {
             {/*  */}
             <Header/>
             {/*  */}
-            <HomeBackgroundImg>
-                <CompanyLogoContainer>
-                <CompanyLogo 
+            <HomeBackgroundImg data-aos="zoom-in">
+                {/* <CompanyLogoContainer  data-aos="zoom-in"> */}
+                <CompanyLogo data-aos="zoom-in"
                 src=
                 'https://res.cloudinary.com/da52fiag8/image/upload/v1743677603/Nirmal_dhenu_RE_white_bg_logo_roe2pd.png' 
                 alt='nirmal-dhenu-infra-logo'
                 />                    
-                </CompanyLogoContainer>
+                {/* </CompanyLogoContainer> */}
 
-                <HomeHeading>
+                <HomeHeading data-aos="zoom-in">
                 Find Your Place of Dream
                 </HomeHeading>
-                <HomeDescription>
+                <HomeDescription data-aos="zoom-in">
                 Get 100% Genuine & Verified property Customer
                 </HomeDescription>
                 <ContactUsButton onClick={()=>{navigate('/gallery')}}>Explore Our Gallery<ArrowIcon/></ContactUsButton>
             </HomeBackgroundImg>
 
             {/*  */}
-            <HomeAboutUsContainer>
+            <HomeAboutUsContainer data-aos="fade-right">
                 <HomeAboutUsHeading>
                     ABOUT US
                 </HomeAboutUsHeading>
@@ -134,9 +134,9 @@ const Home = () => {
                     KNOW MORE ABOUT US 
                 </Button>
             </HomeAboutUsContainer>
-            <HrLine/>
+            
             {/*  */}
-            <HomeHandleEverythingContainer>
+            <HomeHandleEverythingContainer data-aos="fade-left">
                 <HomeHandleEverythingHeading>
                 WE HANDLE EVERYTHING
                 </HomeHandleEverythingHeading>
@@ -160,9 +160,9 @@ const Home = () => {
                     }
                 </DisplayListData>
             </HomeHandleEverythingContainer>
-            <HrLine/>
+            
             {/*  */}
-            <HomeGalleryContainer>
+            <HomeGalleryContainer data-aos="fade-right">
                 <GalleryHeading>
                     OUR GALLERY
                 </GalleryHeading>
@@ -185,9 +185,9 @@ const Home = () => {
                     EXPLORE GALLERY 
                 </Button>
             </HomeGalleryContainer>
-            <HrLine/>
+           
             {/*  */}
-            <OurServicesBgContainer>
+            <OurServicesBgContainer data-aos="fade-left">
                 <OurServiceHeading>OUR FEATURED SERVICES</OurServiceHeading>
                 <DescriptionContent>
                 We offer comprehensive services that simplify every aspect of land buying, selling, 
@@ -210,17 +210,28 @@ const Home = () => {
                     }
                 </DisplayServicesData>
             </OurServicesBgContainer>
-            <HrLine/>
+           
             {/* Testimonial */}
-            <TestimonialBgContainer>
+            <TestimonialBgContainer data-aos="zoom-in">
                 <TestimonialHeading>TESTIMONIAL</TestimonialHeading>
                 <TestimonialContainer>
                 <Slider {...settings}>
                     {
-                        testimonialData.map(({id, name, color,nameColor, message})=>(
+                        testimonialData.map(({id, name, color, message, rating})=>{
+                            let starRating;
+                            if (rating === 3){
+                                starRating = <StarContainer><Star/><Star/><Star/><RestStar/><RestStar/></StarContainer>
+                            }
+                            if (rating === 4){
+                                starRating = <StarContainer><Star/><Star/><Star/><Star/><RestStar/></StarContainer>
+                            }
+                            if (rating===5){
+                                starRating = <StarContainer><Star/><Star/><Star/><Star/><Star/></StarContainer>
+                            }
+                            return(
                             <TestimonialListItem key={id}>
                                 <TestimonialItem>
-                                    <TestimonialMessageContainer color={color}>
+                                    <TestimonialMessageContainer color={color}>    
                                         <CommaContainer>
                                         <Comma/><Comma/>
                                         </CommaContainer>
@@ -228,12 +239,13 @@ const Home = () => {
                                 </TestimonialMessageContainer>
                                 <TestimonialStartRatingNameContainer>
                                 <TestimonialUserName color={color}>{name}</TestimonialUserName>
-                                <StarContainer><Star/><Star/><Star/><Star/><Star/></StarContainer>
+                                {starRating}
                                 </TestimonialStartRatingNameContainer>
                                 
                                 </TestimonialItem>
                             </TestimonialListItem>
-                        ))
+                            )
+                        })
                     }
                     </Slider>
                 </TestimonialContainer>

@@ -14,16 +14,18 @@ import {
     FollowUs, 
     FollowUsContent, 
     FollowUsIconContainer, 
-    LinkedInIcon, 
     InstagramIcon, 
-    WhatsApp
+    FacebookIcon, 
+    YoutubeIcon, 
+    CopyRightContainer,  
+    CopyRightMsg
 } from './styledComponents';
 
 
 
 const Footer = () => {
     return(
-        <FooterBgContainer>
+        <FooterBgContainer data-aos="zoom-in" id="contact">
             {/*  */}
             <FooterCompanyLogoContainer>
             <CompanyLogo 
@@ -62,11 +64,16 @@ const Footer = () => {
                     Stay connected with us on:
                 </FollowUsContent>
                 <FollowUsIconContainer>
-                    <LinkedInIcon/>
                     <InstagramIcon/>
-                    <WhatsApp />
+                    <FacebookIcon/>
+                    <YoutubeIcon/> 
                 </FollowUsIconContainer>
             </FollowUsContainer>
+
+            <CopyRightContainer>
+                
+               <CopyRightMsg>Copyright 2025 by Nirmaldhnu Infra. All Rights Reserved. Developed by Dezyn Edge</CopyRightMsg> 
+            </CopyRightContainer>
         </FooterBgContainer>
 
     )

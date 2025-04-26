@@ -33,18 +33,18 @@ const Project = () => {
     return(
         <ProjectBgContainer>
             <Header/>
-            <ProjectBannerContainer>
-            <ProjectImageBanner src='https://res.cloudinary.com/da52fiag8/image/upload/v1745502536/beautiful-landscape-delimitation-concept_itiv3a.jpg' alt='project-banner-img' />
-                <ProjectTagLineContainer>
-                    <ProjectTagLine>Turning Land into Landmarks</ProjectTagLine>
-                    <ProjectTagLineDescription>Crafting Iconic Spaces, One Plot at a Time</ProjectTagLineDescription>
+            <ProjectBannerContainer data-aos="zoom-in">
+            <ProjectImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/da52fiag8/image/upload/v1745502536/beautiful-landscape-delimitation-concept_itiv3a.jpg' alt='project-banner-img' />
+                <ProjectTagLineContainer data-aos="zoom-in">
+                    <ProjectTagLine data-aos="zoom-in">Turning Land into Landmarks</ProjectTagLine>
+                    <ProjectTagLineDescription data-aos="zoom-in">Crafting Iconic Spaces, One Plot at a Time</ProjectTagLineDescription>
                 </ProjectTagLineContainer>
             </ProjectBannerContainer>
             <ProjectContainer>
-                <ProjectHeading>
+                <ProjectHeading data-aos="fade-right">
                 Our Projects
                 </ProjectHeading>
-                <ProjectDescription>
+                <ProjectDescription data-aos="fade-left">
                 At Nirmal Dhenu Infra, each project is a testament to our vision of 
                 delivering premium plotted developments with long-term value. 
                 We carefully select strategic locations that offer excellent connectivity, 
@@ -58,7 +58,7 @@ const Project = () => {
 
                 </ProjectDescription>
 
-                <DisplayProjectImagesContainer>
+                <DisplayProjectImagesContainer data-aos="fade-right">
                 <ProjectImagesContainer>
                     {
                         projectImages.map(({id, location, img})=>(

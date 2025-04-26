@@ -33,7 +33,8 @@ import {
     OurTeamImageBanner, 
     OurTeamTagLine, 
     OurTeamTagLineContainer, 
-    OurTeamLineDescription
+    OurTeamLineDescription, 
+    DirectorMsgCon
 
 } from './styledComponents';
 import {ourTeamData} from '../Data';
@@ -44,28 +45,27 @@ const OurTeams = () => {
     return(
         <OurTeamsBgContainer>
             <Header/>
-            <OurTeamContainer>
-            <OurTeamImageBanner src='https://res.cloudinary.com/da52fiag8/image/upload/v1745505324/workgroup-three-reporting-serious-young-team-leader_emhton.jpg' alt='about-us-image' />
-                <OurTeamTagLineContainer>
-                    <OurTeamTagLine>Meet the Minds Behind the Mission</OurTeamTagLine>
-                    <OurTeamLineDescription>Driven by passion. Defined by trust</OurTeamLineDescription>
-
+            <OurTeamContainer data-aos="zoom-in">
+            <OurTeamImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/da52fiag8/image/upload/v1745505324/workgroup-three-reporting-serious-young-team-leader_emhton.jpg' alt='about-us-image' />
+                <OurTeamTagLineContainer data-aos="zoom-in">
+                    <OurTeamTagLine data-aos="zoom-in">Meet the Minds Behind the Mission</OurTeamTagLine>
+                    <OurTeamLineDescription data-aos="zoom-in">Driven by passion. Defined by trust</OurTeamLineDescription>
                 </OurTeamTagLineContainer>
 
             </OurTeamContainer>
             <DirectorMessageContainer>
                 <DirectorProfileContainer>
                     <DirectorProfile>
-                    <DirectorProfileImage src='https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png' alt='director-profile-pic-image' />
+                    <DirectorProfileImage data-aos="fade-right" src='https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png' alt='director-profile-pic-image' />
                     </DirectorProfile>
-                    <DirectorProfileDesignationContainer>
+                    <DirectorProfileDesignationContainer data-aos="fade-right">
                     <DirectorNameDesignationContainer>
                     <Director>Anand Kumar Singh</Director>
                     <DirectorDesignation>Director, Nirmal Dhenu Infra</DirectorDesignation>
                     </DirectorNameDesignationContainer>
                     </DirectorProfileDesignationContainer>
                 </DirectorProfileContainer>
-                <DirectorMsgContainer>
+                <DirectorMsgContainer data-aos="fade-left" >
                     <DirectorMessageHeading>
                     Director’s Message:
                     </DirectorMessageHeading>
@@ -98,16 +98,52 @@ const OurTeams = () => {
                      Director, Nirmal Dhenu Infra
                      </DirecotrContent>
                      </p>
-                
              </WarmRegardsContainer>
-                
                 </DirectorMsgContainer>
             </DirectorMessageContainer>
+            {/*  */}
+            <DirectorMsgCon data-aos="fade-left" >
+                    <DirectorMessageHeading>
+                    Director’s Message:
+                    </DirectorMessageHeading>
+                    <DirectorMessageDescription>
+                    At <HighLight>Nirmal Dhenu Infra</HighLight>, we believe that every piece of land holds the potential to shape dreams, 
+                    build futures, and create lasting legacies. With this vision at the core, 
+                    we’ve dedicated ourselves to offering premium plotted developments that are not 
+                    just investments, but stepping stones toward a better tomorrow.
+                    Our journey has always been guided by trust, transparency, and a deep understanding of what our 
+                    customers truly value—security, clarity, and long-term growth. Whether you're buying your first plot, 
+                    expanding your investments, or selling land with confidence, we are here to ensure that your 
+                    experience is smooth, secure, and satisfying.
+                    As we continue to grow and build thriving communities, I personally commit to upholding the values 
+                    that define us—integrity, quality, and customer-first service. I thank all our clients, partners, 
+                    and team members for their trust and support in making <HighLight>Nirmal Dhenu Infra</HighLight> a name synonymous 
+                    with reliability and growth.
+                    <br/>
+                    <LetsContinueMsg>Let’s continue building a future that we can all be proud of.</LetsContinueMsg>
+                    </DirectorMessageDescription>
+                  {/*  */}
+                    <WarmRegardsContainer>
+                     <p>
+                     <WarmRegard>Warm regards</WarmRegard>,
+                     <br/>
+                     <NameSpan>
+                     Anand Kumar Singh
+                     </NameSpan>
+                     <br/>
+                     <DirecotrContent>
+                     Director, Nirmal Dhenu Infra
+                     </DirecotrContent>
+                     </p>
+             </WarmRegardsContainer>
+                </DirectorMsgCon>            
+
+            {/*  */}
             <OurTeamsContainer>
-                <OurTeamsHeading>
+                <OurTeamsHeading data-aos="fade-right">
                 Our Team <br/> <StyleTeams>Driven by Expertise, United by Vision</StyleTeams>  
                 </OurTeamsHeading>
-                <OurTeamDescription>
+                <OurTeamDescription data-aos="fade-left">
                 At <Mark>Nirmal Dhenu Infra</Mark>, 
                 our strength lies in our people. We are a team of passionate 
                 professionals who bring together years of experience in real estate development, 
@@ -121,7 +157,7 @@ const OurTeams = () => {
                 ensuring that every project reflects our core values of <Mark>integrity</Mark>, 
                 <Mark>transparency</Mark>, and <Mark>customer satisfaction</Mark>.
                 </OurTeamDescription>
-                <DisplayOurTeamContainer>
+                <DisplayOurTeamContainer data-aos="fade-right">
                     {
                         ourTeamData.map(({id, name, designation, img})=>(
                             <DisplayTeam key={id}>

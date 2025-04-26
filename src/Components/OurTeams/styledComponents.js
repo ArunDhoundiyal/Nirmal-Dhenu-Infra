@@ -10,7 +10,7 @@ background-color: #ffffff;
 overflow:auto;
 `
 
-// 
+
 export const OurTeamContainer = styled.div`
 margin-top:100px;
   height: 50vh;
@@ -67,21 +67,17 @@ font-size:20px;
 font-size:15px;
 }
 `;
-// 
+
 
 export const OurTeamsContainer = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
-margin-top:8px;
 text-align:center;  
 background-size:cover;
 height:100%;
 padding:10px;
 width:100%;
-@media screen and (max-width:800px){
-margin-top:325px;
-}
 `
 
 export const OurTeamsHeading = styled.h1`
@@ -199,7 +195,7 @@ export const DirectorMessageContainer = styled.div`
 width:100%;
 display:flex;
 flex-direction:row;
-position:relative;
+position:relative;  
 @media screen and (max-width:800px){
 width:100%;
 display:flex;
@@ -211,7 +207,7 @@ height:100%;
 
 export const DirectorProfileContainer = styled.div`
 display:flex;
-flex-direction:column;
+flex-direction:column;  
 align-items:center;
 height:300px;
 width:300px;
@@ -240,7 +236,7 @@ width:100%;
 `
 
 export const DirectorProfileDesignationContainer = styled.div`
-position:absolute;
+position:absolute;  
 width:100%;
 height:calc(100% - 200px);
 top:200px;
@@ -274,12 +270,20 @@ top:0;
 width:calc(100% - 300px);
 height:100%;
 @media screen and (max-width:800px){
-position:absolute;
-width:100%;
-top:300px;
-left:0;
-height:calc(100%-300px);
+display:none;
 }
+`
+
+export const DirectorMsgCon = styled.div`
+@media screen and (min-width:801px){
+display:none;
+}
+@media screen and (max-width:800px){
+width:100%;
+height:100%;
+padding:30px;
+}
+
 `
 export const DirectorMessageHeading = styled.h1`
 color: #477626;

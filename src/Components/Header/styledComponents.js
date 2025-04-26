@@ -4,6 +4,11 @@ import {Link} from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
+export const AnchorTag = styled.a`
+text-decoration:none;
+color:inherit;
+`;
+
 export const StyledLink = styled(Link)`
 text-decoration:none;
 color:inherit;
@@ -108,14 +113,15 @@ align-items:center;
 padding:12px;   
 cursor:pointer;
 color: #ffffff;
+background-color: ${({onactive})=>onactive?' #c84241':' #2A491D'};
+font-weight:${({onactive})=>onactive?'bold':'normal'};
 position:relative;
 &:hover{
-background-color:#c84241;
+background-color: #c84241;
 }
-
 }
 @media screen and (min-width:701px){
-color: #ffffff;
+color: ${({onactive})=>onactive?' #c84241':' #ffffff'};
 font-weight:bold;
 display:flex;
 flex-direction:row;
@@ -127,11 +133,11 @@ position:relative;
 &::after{
 bottom:0;
 left:0;
-width:0%;
+width:${({onactive})=>onactive?'100%':'0%'};
 height:3px;
 position:absolute;
 content:'';
-background-color:#c84241;
+background-color: #c84241;
 transition-property:width;
 transition-duration:0.50s;
 transition-timing-function:ease;
@@ -144,12 +150,7 @@ color: #c84241;
 font-weight:bold;
 }
 }
-
-color:${(props)=>props.onactive ? " #c84241" : 'inherit'};
-font-weight:${(props)=>props.onactive ? "bold" : 'normal'};
-`
-
-
+`;
 
 
 export const NirmalDhenuCompanyLogoContainer = styled.div`

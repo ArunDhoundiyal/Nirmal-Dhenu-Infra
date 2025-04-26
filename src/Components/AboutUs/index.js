@@ -24,21 +24,21 @@ const AboutUs = () => {
     return(
         <AboutUsBgConatiner>
             <Header/>
-            <AboutUsBanner>
-                <AboutUsImageBanner src='https://res.cloudinary.com/da52fiag8/image/upload/v1744957754/land-plot-with-nature-landscape-location-pin_jrtzd1.jpg' alt='about-us-image' />
-                <AboutUsTagLineContainer>
-                    <AboutUsTagLine>Premium Real Estate | Trusted Land Investments</AboutUsTagLine>
-                    <AboutUsTagLineDescription>Build your future on a foundation of trust and growth.</AboutUsTagLineDescription>
+            <AboutUsBanner data-aos="zoom-in">
+                <AboutUsImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/da52fiag8/image/upload/v1744957754/land-plot-with-nature-landscape-location-pin_jrtzd1.jpg' alt='about-us-image' />
+                <AboutUsTagLineContainer data-aos="zoom-in">
+                    <AboutUsTagLine data-aos="zoom-in">Premium Real Estate | Trusted Land Investments</AboutUsTagLine>
+                    <AboutUsTagLineDescription data-aos="zoom-in">Build your future on a foundation of trust and growth.</AboutUsTagLineDescription>
                 </AboutUsTagLineContainer>
             </AboutUsBanner>
                         <HomeAboutUsContainer>
-                            <HomeAboutUsHeading>
+                            <HomeAboutUsHeading  data-aos="fade-right">
                                 ABOUT US
                             </HomeAboutUsHeading>
-                            <HomeAboutUsNirmalDhenu>
+                            <HomeAboutUsNirmalDhenu  data-aos="fade-left">
                             Welcome to Nirmal Dhenu Infra <br/> <StytleSpan>Your Trusted Partner in Premium Plot Investments!</StytleSpan>
                             </HomeAboutUsNirmalDhenu>
-                            <HomeAboutUsDescription>
+                            <HomeAboutUsDescription   data-aos="fade-right">
                             Nirmal Dhenu Infra is a premier real estate company specializing in 
                             premium plotted developments. With a vision to create thriving communities 
                             and investment opportunities, we are dedicated to providing strategically 

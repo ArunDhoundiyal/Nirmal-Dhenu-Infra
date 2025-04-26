@@ -2,10 +2,11 @@ import { styled } from 'styled-components';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SiComma } from "react-icons/si";
 import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 export const ArrowIcon = styled(FaArrowRightLong)`
 color:#ffffff;
 margin-left:12px;
-`
+`;
 
 export const BackgroundContainer = styled.div`
 display:flex;
@@ -14,14 +15,16 @@ align-items:center;
 min-height:100vh;
 background-size:cover;
 background-color:#FFFFFF;
-// overflow:auto;
-`
+`;
 
 export const HomeBackgroundImg = styled.div`
 background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1743657594/land-plot-with-nature-landscape-location-pin_11zon_h3db8o.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,7 +37,6 @@ background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v174365
   animation-timing-function:ease-in-out;
   animation-play-state: running;
   animation-fill-mode: both;
-  overflow:auto;
   cursor:pointer;
   &:hover{
   animation-play-state: paused;
@@ -83,17 +85,18 @@ background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v174365
   `;
 
 export const CompanyLogoContainer = styled.div`
-`
+border:solid 2px red;
+dispaly:inline;
+`;
 
 export const CompanyLogo = styled.img`
-height:300px;
-@media screen and (max-width:550px){
-height:250px;
-}
-@media screen and (max-width:344px){
+display:inline;
 height:200px;
-}
-`
+width:180px;
+margin:0;
+padding:0;  
+box-sizing:border-box;
+`;
 
 export const HomeHeading = styled.h1`
 font-size:100px;
@@ -119,7 +122,7 @@ font-size:40px;
 @media screen and (max-width:400px){
 font-size:30px;
 }
-`
+`;
 
 export const HomeDescription = styled.h2`
 color:#ffffff;
@@ -130,7 +133,7 @@ font-size:20px;
 @media screen and (max-width:400px){
 font-size:15px;
 }
-`
+`;
 
 
 
@@ -181,8 +184,7 @@ width:180px;
 height:50px;
 font-size:12px;
 }
-
-`
+`;
 
 export const HomeAboutUsContainer = styled.div`
 display:flex;
@@ -192,14 +194,14 @@ text-align:center;
 padding:8px;
 width:80%;
 margin:50px;
-`
+`;
 
 export const HomeAboutUsHeading = styled.h1`
 color: #c84241;
 font-size:20px;
 font-weight:bold;
 margin:8px;
-`
+`;
 
 export const HomeAboutUsNirmalDhenu = styled.h2`
 color: #477626;
@@ -210,11 +212,11 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:16px;
 }
-`
+`;
 
 export const StytleSpan = styled.span`
 color:#c84241;
-`
+`;
 
 export const HomeAboutUsDescription = styled.p`
 text-align:center;
@@ -225,8 +227,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:12px;
 }
-
-`
+`;
 
 export const Button = styled.button`
 background-color:transparent;
@@ -265,7 +266,7 @@ font-size:12px;
 width:100%;
 overflow:auto;
 }
-`
+`;
 
 export const HomeHandleEverythingContainer = styled.div`
 display:flex;
@@ -275,7 +276,7 @@ text-align:center;
 padding:8px;
 width:80%;
 margin:50px;
-`
+`;
 
 export const HomeHandleEverythingHeading = styled.h2`
 color: #477626;
@@ -286,7 +287,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:16px;
 }
-`
+`;
 
 export const HomeHandleEverythingDes = styled.p`
 text-align:center;
@@ -297,7 +298,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:12px;
 }
-`
+`;
 
 export const DisplayListData = styled.ul`
 display:flex;
@@ -320,7 +321,7 @@ align-items:center;
 padding:8px;
 white-space: normal;
 width:100%;
-`
+`;
 
 export const ImageContainer = styled.div`
 position:relative;
@@ -334,7 +335,7 @@ width:200px;
 height:150px;
 width:150px;
 }
-`
+`;
 
 export const Img = styled.img`
 left:0;
@@ -343,7 +344,7 @@ height:100%;
 width:100%;
 position:absolute;
 object-fit:fill;
-`
+`;
 
 export const Heading = styled.h2`
 color: #c84241;
@@ -354,7 +355,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:16px;
 }
-`
+`;
 
 
 export const Description = styled.p`
@@ -366,7 +367,8 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:12px;
 }
-`
+`;
+
 export const HomeGalleryContainer = styled.div`
 display:flex;
 flex-direction:column;
@@ -375,7 +377,7 @@ text-align:center;
 padding:20px;
 width:80%;
 margin:50px;
-`
+`;
 
 export const  GalleryHeading = styled.h2`
 color: #477626;
@@ -386,7 +388,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:16px;
 }
-`
+`;
 
 export const DisplayHomeGallery = styled.ul`
 display:flex;
@@ -399,14 +401,14 @@ display:flex;
 flex-direction:column;
 align-items:center;
 }
-`
+`;
 export const DiplayHomeGalleryImg = styled.li`
 display:flex;
 flex-direction:column;
 align-items:center;
 margin:12px;
 width:100%;
-`
+`;
 
 export const ImageGalleryContainer = styled.div`
 position:relative;
@@ -414,7 +416,7 @@ height:300px;
 width:100%;
 margin:12px;
 z-index:1;
-`
+`;
 
 
 
@@ -425,21 +427,9 @@ height:100%;
 width:100%;
 position:absolute;
 object-fit:cover;
-`
+`;
 
-export const HrLine = styled.hr`
-  border: none;
-  height: 3px;
-  width: 75%;
-  margin: 20px auto;
-  background: repeating-linear-gradient(
-    to right,
-    #c84241,
-    #c84241 10px,  
-    transparent 10px,
-    transparent 20px 
-  );
-`
+
 
 export const OurServicesBgContainer = styled.div`
 display:flex;
@@ -449,7 +439,7 @@ text-align:center;
 padding:20px;
 width:80%;
 margin:50px;
-`
+`;
 
 export const  OurServiceHeading = styled.h2`
 color: #477626;
@@ -460,7 +450,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:16px;
 }
-`
+`;
 
 export const DisplayServicesData = styled.ul`
 display:flex;
@@ -474,7 +464,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 }
-`
+`;
 
 export const DisplayServicesItems = styled.li`
 display:flex;
@@ -482,7 +472,7 @@ flex-direction:column;
 align-items:center;
 width:100%;
 margin:12px;
-`
+`;
 
 export const ServiceImagesContainer = styled.div`
 position:relative;
@@ -496,7 +486,7 @@ width:450px;
 @media screen and (max-width:700px){
 width:100%;
 }
-`
+`;
 
 export const ServiceImage = styled.img`
 left:0;
@@ -505,7 +495,7 @@ height:100%;
 width:100%;
 position:absolute;
 object-fit:fill;
-`
+`;
 export const DescriptionContent = styled.p`
 text-align:center;
 font-size:20px;
@@ -515,7 +505,7 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:12px;
 }
-`
+`;
 
 export const TestimonialBgContainer = styled.div`
 display:flex;
@@ -525,8 +515,7 @@ text-align:center;
 padding:20px;
 width:100%;
 margin:50px;
-// border:solid 1px red;
-`
+`;
 
 export const TestimonialHeading = styled.h2`
 color: #477626;
@@ -537,20 +526,19 @@ margin:8px;
 @media screen and (max-width:750px){
 font-size:16px;
 }
-`
+`;
 
 export const TestimonialContainer = styled.ul`
 list-style-type:none;
-// border:solid 1px blue;
 margin-top:50px;
 width:100%;
-`
+`;
 
 export const TestimonialListItem = styled.li`
 height:400px;
 width:300px;
 position:relative;
-`
+`;
 
 export const TestimonialItem = styled.div`
 position:absolute;
@@ -570,7 +558,7 @@ margin-right:10px;
 @media screen and (max-width:750px){
  width:200px;
 }
-`
+`;
 
 export const TestimonialMessageContainer = styled.div`
 height:250px;
@@ -584,7 +572,7 @@ flex-direction:column;
 justify-content:space-around;
 align-items:center;
 padding:12px;
-`
+`;
 
 export const TestimonialStartRatingNameContainer =styled.div`
 position:absolute;
@@ -592,7 +580,6 @@ top:250px;
 left:0;
 width:100%;
 height:calc(100% - 250px);
-// border:solid 1px blue;
 padding:8px;
 display:flex;
 flex-direction:column;
@@ -601,10 +588,15 @@ justify-content:space-around;
 `
 export const StarContainer = styled.div`
 display:flex;
-`
+`;
 
 export const Star = styled(FaStar)`
-color: #efcc00;
+color: #ffc40c;
+font-size:20px;
+`;
+
+export const RestStar = styled(FaRegStar)`
+color: #ffc40c;
 font-size:20px;
 `
 
@@ -616,7 +608,7 @@ font-style: italic;
 @media screen and (max-width:750px){
  font-size:14px;
 }
-`
+`;
 
 export const TestimonialUserName = styled.h1`
 font-size:18px;
@@ -626,10 +618,11 @@ text-decoration:underline;
 @media screen and (max-width:750px){
  font-size:16px;
 }
-`
+`;
+
 export const CommaContainer = styled.div``
 export const Comma = styled(SiComma)`
 color:#ffffff;
 font-size:20px;
-`
+`;
 

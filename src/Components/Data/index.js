@@ -50,73 +50,73 @@ export const ourTeamData = [
 export const testimonialData = [
     {
         id:1, 
-        name:'Ravi Sharma, Investor', 
+        name:'Preadeep Sharma,, Investor', 
         message:'I recently purchased a plot through Nirmal Dhenu Infra and the entire process was seamless. From the first site visit to final registration, the team was incredibly supportive and transparent. Highly recommend!',
         color:' #477626', 
-        nameColor:' #c84241'
+        rating:5
     }, 
     {
         id:2, 
-        name:'Priya Verma, First-time Buyer', 
+        name:'Ravi Chatuvedi, First-time Buyer', 
         message:'Nirmal Dhenu Infra gave me the confidence to invest in land for the first time. Their professional approach and clear documentation made everything stress-free.', 
         color:' #c84241', 
-        nameColor:' #477626'
+        rating:4
     }, 
     {
         id:3, 
-        name:'Ankit Mehra, Businessman', 
+        name:'Ravi Chatuvedi, First-time Buyer', 
         message:"The best part about working with Nirmal Dhenu Infra is their honesty. No hidden charges, no false promises—just genuine plots in great locations.",
         color:' #477626', 
-        nameColor:' #c84241'
+        rating:3
     }, 
     {
         id:4, 
         name:'Sunita Patel, Land Seller', 
         message:'I was amazed by their prompt communication and expert guidance throughout my land-selling journey. I got a great deal faster than I expected!', 
         color:' #c84241', 
-        nameColor:' #477626'
+        rating:4
     },
     {
         id:5, 
-        name:'Deepak Rathi, Buyer', 
+        name:'Shikhar Singh, Buyer', 
         message:"Their team is knowledgeable and courteous. They took care of all the paperwork and explained everything clearly. I'm extremely satisfied with their service.", 
-        color:' #477626', 
-        nameColor:' #c84241'
+        color:' #477626',  
+        rating:5
     }, 
     {
         id:6, 
         name:'Meena Yadav, Investor', 
         message:'From the first call to the final paperwork, Nirmal Dhenu Infra handled everything professionally. It truly felt like a one-stop solution for real estate needs.', 
         color:' #c84241', 
-        nameColor:' #477626'
+        rating:4
     }, 
     {
         id:7, 
         name:'Amit Thakur, Real Estate Investor',
         message:'Thanks to Nirmal Dhenu Infra, I secured a high-potential plot at an excellent price. Their market insights are truly valuable!', 
         color:' #477626', 
-        nameColor:' #c84241'
+        rating:3
     }, 
     {
         id:8, 
         name:'Shalini Gupta, Homebuyer', 
         message:"They showed me only legally clear, verified properties. That gave me complete peace of mind. I'm glad I chose them over others.", 
         color:' #c84241', 
-        nameColor:' #477626'
+        rating:5
     },
     {
         id:9, 
         name:'Nitesh Rawat, NRI Buyer',
         message:'Their photo gallery and virtual tours helped me shortlist properties before visiting. It saved a lot of time and effort.', 
         color:' #477626', 
-        nameColor:' #c84241'
+        rating:3
     },
     {
         id:10, 
         name:'Kavita Joshi, Plot Owner',
         message:"Professional, responsive, and committed to client satisfaction—that's how I’d describe Nirmal Dhenu Infra. Truly impressed with their service!", 
         color:' #c84241', 
-        nameColor:' #477626'
+        rating:4
     }
 ];
 
@@ -167,6 +167,8 @@ export const projectDetailInformation = [
             {id:2, img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745226456/WhatsApp_Image_2025-03-20_at_4.58.53_PM.jpeg_q7reoz.jpg'}, 
             {id:3, img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745226455/WhatsApp_Image_2025-03-20_at_4.58.51_PM.jpeg_u7fqx0.jpg'},
             {id:4, img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745226455/WhatsApp_Image_2025-03-20_at_4.58.54_PM.jpeg_wmsqp3.jpg'},
+            {id:5, img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745669554/Tiara_Flyer_page-0001_ehapys.jpg'},
+            {id:6, img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745669552/Tiara_Flyer_page-0002_1_xvxes8.jpg'}
         ], 
         projectHightlights:[
             {id:1, hightlight:'Developed to high standards'},

@@ -84,7 +84,7 @@ color: #dcdcdc;
 font-size:40px;
 position:absolute;
 top:20px;
-left:30px;
+right:30px;
 cursor:pointer;
 &:hover{
 color: #ffffff;

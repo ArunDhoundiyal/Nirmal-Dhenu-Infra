@@ -15,15 +15,14 @@ import {
     NirmalDhenuCompanyLogo, 
     CompanyName, 
     Description, 
-    StyledLink
+    StyledLink, 
+    AnchorTag
 } from './styledComponents';
 import {navHeaderData} from '../Data';
 const Header = () => {
     const [menuIcon, setMenuIcon] = useState(false);
     const location = useLocation();
     const checkCurrentPath = location.pathname;
-    console.log(checkCurrentPath);
-    
     const onClickMenuIcon = () => {
         setMenuIcon(preState => !preState);
 
@@ -50,9 +49,11 @@ const Header = () => {
                   if (id === 6) {
                     return (
                     <NavItems 
-                    key={id}
+                    key={id} 
+                    onactive={checkCurrentPath===path}
                     >
-                      {name} 
+                      <AnchorTag href="#contact">{name}</AnchorTag>
+                       
                     </NavItems>
                     );
                   }
@@ -85,7 +86,8 @@ const Header = () => {
                         return (
                           <NavItems 
                           key={id}>
-                            {name}
+                            <AnchorTag href="#contact">{name}</AnchorTag>
+                            
                           </NavItems>
 
                         )

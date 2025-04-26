@@ -16,7 +16,7 @@ const NotFound = () => {
     return(
         <NotFoundBgContainer>
             <Header/>
-            <NotFoundContainer>
+            <NotFoundContainer data-aos="zoom-in">
                 <NotFoundImgContainer>
                 <Img alt='not-found-img' src='https://res.cloudinary.com/da52fiag8/image/upload/v1745477506/10740175_iwbvrh.jpg'/>
                 </NotFoundImgContainer>
