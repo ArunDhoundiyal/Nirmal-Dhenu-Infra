@@ -18,7 +18,8 @@ import {
     FacebookIcon, 
     YoutubeIcon, 
     CopyRightContainer,  
-    CopyRightMsg
+    CopyRightMsg, 
+    AnchorTag
 } from './styledComponents';
 
 
@@ -64,9 +65,15 @@ const Footer = () => {
                     Stay connected with us on:
                 </FollowUsContent>
                 <FollowUsIconContainer>
+                    <AnchorTag href='https://www.instagram.com/nirmaldhenuinfra/'>
                     <InstagramIcon/>
+                    </AnchorTag>
+                    <AnchorTag href='https://www.facebook.com/people/Nirmal-Dhenu-Infra/61575368651747/'>
                     <FacebookIcon/>
+                    </AnchorTag>
+                    <AnchorTag>
                     <YoutubeIcon/> 
+                    </AnchorTag>
                 </FollowUsIconContainer>
             </FollowUsContainer>
 

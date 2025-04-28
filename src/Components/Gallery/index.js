@@ -36,8 +36,8 @@ const Gallery = () => {
     return(
         <GalleryBgContainer>
         <Header/>
-            <GalleryHeading data-aos="fade-right">Our Gallery</GalleryHeading>
-            <GalleryDescription data-aos="fade-left">
+            <GalleryHeading data-aos="zoom-in">Our Gallery</GalleryHeading>
+            <GalleryDescription data-aos="zoom-in">
             At Nirmal Dhenu Infra, we take pride in showcasing the true potential of every project we undertake. 
             Our gallery captures the essence of our work — from lush green landscapes and well-laid internal 
             roads to clearly demarcated plots and thoughtfully developed infrastructure. 
@@ -58,7 +58,7 @@ const Gallery = () => {
             const gridRow = id % 2 === 0 ? 10 : 15;
             return (
             <GalleryImageContainer key={id} gridrow={gridRow} onClick={()=>onClickGalleryImg(id)}>
-                <GalleryImage data-aos="flip-left" src={galleryImg} alt={`gallery-img-${id}`} />
+                <GalleryImage data-aos="zoom-in" src={galleryImg} alt={`gallery-img-${id}`} />
             </GalleryImageContainer>
             );
         })}
@@ -67,7 +67,7 @@ const Gallery = () => {
         <Footer/>
         {
         galleryId && 
-            <GalleryDetailedViewContainer data-aos="flip-right">
+            <GalleryDetailedViewContainer data-aos="zoom-in">
             <GalleryDetailedView>
                 <GalleryImage src={findImg.galleryImg} />
                 <CrossIcon onClick={onClickCloseButton}/>

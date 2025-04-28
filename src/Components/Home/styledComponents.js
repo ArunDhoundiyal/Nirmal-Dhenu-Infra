@@ -8,6 +8,7 @@ color:#ffffff;
 margin-left:12px;
 `;
 
+
 export const BackgroundContainer = styled.div`
 display:flex;
 flex-direction:column;
@@ -21,14 +22,12 @@ export const HomeBackgroundImg = styled.div`
 background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1743657594/land-plot-with-nature-landscape-location-pin_11zon_h3db8o.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  position:relative;
   background-position: center;
   margin:0;
   padding:0;
   box-sizing:border-box;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 50px;
   width:100%;
   animation-name:change-image;
@@ -40,13 +39,6 @@ background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v174365
   cursor:pointer;
   &:hover{
   animation-play-state: paused;
-  }
-  @media screen and (max-width:700px){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  text-align:center;
   }
   @keyframes change-image{
   100%,0%{
@@ -84,15 +76,32 @@ background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v174365
   }
   `;
 
+export const HomeBackgroundImgContentContainer = styled.div`
+background-color: rgba(0, 0, 0, 0.4);
+position:absolute;
+top:100px;
+height: calc(100vh - 100px);
+padding:0 50px;
+width:100%;
+left:0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+@media screen and (max-width:500px){
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+`;
+
 export const CompanyLogoContainer = styled.div`
-border:solid 2px red;
 dispaly:inline;
 `;
 
 export const CompanyLogo = styled.img`
 display:inline;
-height:200px;
-width:180px;
+height:250px;
+width:200px;
 margin:0;
 padding:0;  
 box-sizing:border-box;
@@ -101,26 +110,53 @@ box-sizing:border-box;
 export const HomeHeading = styled.h1`
 font-size:100px;
 letter-spacing:-2px;
+line-height: 90px;
 word-spacing:1px;
 color:#ffffff;
 max-width:800px;
 @media screen and (max-width:950px){
 font-size:75px;
+letter-spacing:-2px;
+line-height: 70px;
+word-spacing:1px;
+color:#ffffff;
 }
 @media screen and (max-width:750px){
 font-size:65px;
+letter-spacing:-2px;
+line-height: 60px;
+word-spacing:1px;
+color:#ffffff;
 }
 @media screen and (max-width:650px){
 font-size:55px;
+letter-spacing:-2px;
+line-height: 55px;
+word-spacing:1px;
+color:#ffffff;
 }
 @media screen and (max-width:600px){
 font-size:50px;
+letter-spacing:-2px;
+line-height: 50px;
+word-spacing:1px;
+color:#ffffff;
 }
 @media screen and (max-width:500px){
 font-size:40px;
+letter-spacing:-2px;
+line-height: 50px;
+word-spacing:1px;
+color:#ffffff;
+text-align:center;
 }
 @media screen and (max-width:400px){
 font-size:30px;
+letter-spacing:-2px;
+line-height: 30px;
+word-spacing:1px;
+color:#ffffff;
+text-align:center;
 }
 `;
 
@@ -128,9 +164,12 @@ export const HomeDescription = styled.h2`
 color:#ffffff;
 font-weight:500;
 @media screen and (max-width:500px){
+text-align:center;
 font-size:20px;
+padding
 }
 @media screen and (max-width:400px){
+text-align:center;
 font-size:15px;
 }
 `;
@@ -264,7 +303,6 @@ width:200px;
 @media screen and (max-width:250px){
 font-size:12px;
 width:100%;
-overflow:auto;
 }
 `;
 
@@ -550,7 +588,6 @@ position:absolute;
  border:solid 1px darkgrey;
  border-radius:20px;
  padding:20px;
- overflow:auto;
 box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 cursor:pointer;
 margin-left:10px;

@@ -56,16 +56,16 @@ const OurTeams = () => {
             <DirectorMessageContainer>
                 <DirectorProfileContainer>
                     <DirectorProfile>
-                    <DirectorProfileImage data-aos="fade-right" src='https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png' alt='director-profile-pic-image' />
+                    <DirectorProfileImage data-aos="zoom-in" src='https://res.cloudinary.com/da52fiag8/image/upload/v1745831203/user_2_dgeshf.png' alt='director-profile-pic-image' />
                     </DirectorProfile>
-                    <DirectorProfileDesignationContainer data-aos="fade-right">
+                    <DirectorProfileDesignationContainer data-aos="zoom-in">
                     <DirectorNameDesignationContainer>
                     <Director>Anand Kumar Singh</Director>
                     <DirectorDesignation>Director, Nirmal Dhenu Infra</DirectorDesignation>
                     </DirectorNameDesignationContainer>
                     </DirectorProfileDesignationContainer>
                 </DirectorProfileContainer>
-                <DirectorMsgContainer data-aos="fade-left" >
+                <DirectorMsgContainer data-aos="zoom-in" >
                     <DirectorMessageHeading>
                     Director’s Message:
                     </DirectorMessageHeading>
@@ -102,7 +102,7 @@ const OurTeams = () => {
                 </DirectorMsgContainer>
             </DirectorMessageContainer>
             {/*  */}
-            <DirectorMsgCon data-aos="fade-left" >
+            <DirectorMsgCon data-aos="zoom-in" >
                     <DirectorMessageHeading>
                     Director’s Message:
                     </DirectorMessageHeading>
@@ -140,10 +140,10 @@ const OurTeams = () => {
 
             {/*  */}
             <OurTeamsContainer>
-                <OurTeamsHeading data-aos="fade-right">
+                <OurTeamsHeading data-aos="zoom-in">
                 Our Team <br/> <StyleTeams>Driven by Expertise, United by Vision</StyleTeams>  
                 </OurTeamsHeading>
-                <OurTeamDescription data-aos="fade-left">
+                <OurTeamDescription data-aos="zoom-in">
                 At <Mark>Nirmal Dhenu Infra</Mark>, 
                 our strength lies in our people. We are a team of passionate 
                 professionals who bring together years of experience in real estate development, 
@@ -157,7 +157,7 @@ const OurTeams = () => {
                 ensuring that every project reflects our core values of <Mark>integrity</Mark>, 
                 <Mark>transparency</Mark>, and <Mark>customer satisfaction</Mark>.
                 </OurTeamDescription>
-                <DisplayOurTeamContainer data-aos="fade-right">
+                <DisplayOurTeamContainer data-aos="zoom-in">
                     {
                         ourTeamData.map(({id, name, designation, img})=>(
                             <DisplayTeam key={id}>

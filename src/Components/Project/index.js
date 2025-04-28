@@ -41,10 +41,10 @@ const Project = () => {
                 </ProjectTagLineContainer>
             </ProjectBannerContainer>
             <ProjectContainer>
-                <ProjectHeading data-aos="fade-right">
+                <ProjectHeading data-aos="zoom-in">
                 Our Projects
                 </ProjectHeading>
-                <ProjectDescription data-aos="fade-left">
+                <ProjectDescription data-aos="zoom-in">
                 At Nirmal Dhenu Infra, each project is a testament to our vision of 
                 delivering premium plotted developments with long-term value. 
                 We carefully select strategic locations that offer excellent connectivity, 
@@ -58,7 +58,7 @@ const Project = () => {
 
                 </ProjectDescription>
 
-                <DisplayProjectImagesContainer data-aos="fade-right">
+                <DisplayProjectImagesContainer data-aos="zoom-in">
                 <ProjectImagesContainer>
                     {
                         projectImages.map(({id, location, img})=>(

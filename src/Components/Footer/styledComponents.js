@@ -3,6 +3,11 @@ import { FaFacebook } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import styled from "styled-components";
 
+export const AnchorTag = styled.a`
+text-decoration:none;
+color:inherit;
+`
+
 export const InstagramIcon = styled(FaInstagram)`
 color:#ffffff;
 font-size:30px;

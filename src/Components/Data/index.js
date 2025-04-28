@@ -40,11 +40,11 @@ export const ourServices = [
 ]; 
 
 export const ourTeamData = [
-    {id:1, name:'Shikhar Singh', designation:'Project Cordinator', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png'}, 
-    {id:2, name:'Harish Papane', designation:'Accounts Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png'}, 
-    {id:3, name:'Deepak Chaudhary', designation:'Sales Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png'}, 
-    {id:4, name:'Ravi Chatuvedi', designation:'Sales Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png'}, 
-    {id:5, name:'Pradeep Sharma', designation:'Sales Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745049621/user_1_lwapec.png'}
+    {id:1, name:'Shikhar Singh', designation:'Project Cordinator', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745831203/user_2_dgeshf.png'}, 
+    {id:2, name:'Harish Papane', designation:'Accounts Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745831203/user_2_dgeshf.png'}, 
+    {id:3, name:'Deepak Chaudhary', designation:'Sales Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745831203/user_2_dgeshf.png'}, 
+    {id:4, name:'Ravi Chatuvedi', designation:'Sales Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745831203/user_2_dgeshf.png'}, 
+    {id:5, name:'Pradeep Sharma', designation:'Sales Manager', img:'https://res.cloudinary.com/da52fiag8/image/upload/v1745831203/user_2_dgeshf.png'}
 ]; 
 
 export const testimonialData = [
@@ -243,3 +243,6 @@ export const galleryImage = [
     }
   ];
   
+
+
+

@@ -32,13 +32,13 @@ const AboutUs = () => {
                 </AboutUsTagLineContainer>
             </AboutUsBanner>
                         <HomeAboutUsContainer>
-                            <HomeAboutUsHeading  data-aos="fade-right">
+                            <HomeAboutUsHeading  data-aos="zoom-in">
                                 ABOUT US
                             </HomeAboutUsHeading>
-                            <HomeAboutUsNirmalDhenu  data-aos="fade-left">
+                            <HomeAboutUsNirmalDhenu  data-aos="zoom-in">
                             Welcome to Nirmal Dhenu Infra <br/> <StytleSpan>Your Trusted Partner in Premium Plot Investments!</StytleSpan>
                             </HomeAboutUsNirmalDhenu>
-                            <HomeAboutUsDescription   data-aos="fade-right">
+                            <HomeAboutUsDescription   data-aos="zoom-in">
                             Nirmal Dhenu Infra is a premier real estate company specializing in 
                             premium plotted developments. With a vision to create thriving communities 
                             and investment opportunities, we are dedicated to providing strategically 

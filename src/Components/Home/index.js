@@ -61,7 +61,8 @@ import {
     Comma, 
     CommaContainer, 
     StarContainer, 
-    Star
+    Star, 
+    HomeBackgroundImgContentContainer
 } from "./styledComponents"; 
 
 
@@ -97,25 +98,25 @@ const Home = () => {
             <Header/>
             {/*  */}
             <HomeBackgroundImg data-aos="zoom-in">
-                {/* <CompanyLogoContainer  data-aos="zoom-in"> */}
+                <HomeBackgroundImgContentContainer>
                 <CompanyLogo data-aos="zoom-in"
                 src=
                 'https://res.cloudinary.com/da52fiag8/image/upload/v1743677603/Nirmal_dhenu_RE_white_bg_logo_roe2pd.png' 
                 alt='nirmal-dhenu-infra-logo'
                 />                    
-                {/* </CompanyLogoContainer> */}
-
                 <HomeHeading data-aos="zoom-in">
-                Find Your Place of Dream
+                Find Your Place  of Dream
                 </HomeHeading>
                 <HomeDescription data-aos="zoom-in">
                 Get 100% Genuine & Verified property Customer
                 </HomeDescription>
                 <ContactUsButton onClick={()=>{navigate('/gallery')}}>Explore Our Gallery<ArrowIcon/></ContactUsButton>
+                </HomeBackgroundImgContentContainer>
+                
             </HomeBackgroundImg>
 
             {/*  */}
-            <HomeAboutUsContainer data-aos="fade-right">
+            <HomeAboutUsContainer data-aos="zoom-in">
                 <HomeAboutUsHeading>
                     ABOUT US
                 </HomeAboutUsHeading>
@@ -136,7 +137,7 @@ const Home = () => {
             </HomeAboutUsContainer>
             
             {/*  */}
-            <HomeHandleEverythingContainer data-aos="fade-left">
+            <HomeHandleEverythingContainer data-aos="zoom-in">
                 <HomeHandleEverythingHeading>
                 WE HANDLE EVERYTHING
                 </HomeHandleEverythingHeading>
@@ -162,7 +163,7 @@ const Home = () => {
             </HomeHandleEverythingContainer>
             
             {/*  */}
-            <HomeGalleryContainer data-aos="fade-right">
+            <HomeGalleryContainer data-aos="zoom-in">
                 <GalleryHeading>
                     OUR GALLERY
                 </GalleryHeading>
@@ -187,7 +188,7 @@ const Home = () => {
             </HomeGalleryContainer>
            
             {/*  */}
-            <OurServicesBgContainer data-aos="fade-left">
+            <OurServicesBgContainer data-aos="zoom-in">
                 <OurServiceHeading>OUR FEATURED SERVICES</OurServiceHeading>
                 <DescriptionContent>
                 We offer comprehensive services that simplify every aspect of land buying, selling, 

@@ -7,8 +7,10 @@ const AOSWrapper = ({ children }) => {
   useEffect(() => {
     
     AOS.init({
-      duration: 2000,  
-      once: false,      
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,      
     });
   }, []);
 

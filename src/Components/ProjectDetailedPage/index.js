@@ -64,7 +64,7 @@ const ProjectDetailedPage = () => {
                 data ? (
                     <ProjectDetailedContainer>
                     <ProjectDetail>
-                        <ProjectImageContainer data-aos="fade-right">
+                        <ProjectImageContainer data-aos="zoom-in">
                             <DisplayProjectImageContainer>
                             <LeftArrowButton onClick={onClickLeftButton}/>
                                 <DisplayProjectCarusalImg isactive={filterProjectImg.id===5||filterProjectImg.id===6 } src={filterProjectImg.img} alt={`${filterProjectImg.id}-${id}-img`} />
@@ -80,7 +80,7 @@ const ProjectDetailedPage = () => {
                             }
                         </ProjectImageCarausalContainer>
                         </ProjectImageContainer>
-                        <ProjectDetailContentContainer data-aos="fade-left">
+                        <ProjectDetailContentContainer data-aos="zoom-in">
                             <MainHeading >Introducing a New Era in <StyleLocation>{location}</StyleLocation></MainHeading>
                             <Description>{desription}</Description>
                             <ProjectHightLightContainer>
@@ -129,10 +129,10 @@ const ProjectDetailedPage = () => {
                         <Img src='https://res.cloudinary.com/da52fiag8/image/upload/v1743677603/Nirmal_dhenu_RE_white_bg_logo_roe2pd.png' alt='nirmal-dhenu-infra-company-logo' />
                         </CompanyLogoContainer>
                         
-                        <ComingSoonHeading data-aos="fade-right">
+                        <ComingSoonHeading data-aos="zoom-in">
                         Coming <ComingSoonSpan>Soon</ComingSoonSpan>  
                         </ComingSoonHeading>
-                        <ComingSoonMsg data-aos="fade-left">
+                        <ComingSoonMsg data-aos="zoom-in">
                         We’re excited to announce the launch of our upcoming plotted 
                         development. Strategically located, legally clear, and 
                         thoughtfully planned — these plots offer the perfect 

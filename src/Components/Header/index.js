@@ -48,22 +48,26 @@ const Header = () => {
                 navHeaderData.map(({ id, name, path }) => {
                   if (id === 6) {
                     return (
+                    <AnchorTag href="#contact">
                     <NavItems 
                     key={id} 
-                    onactive={checkCurrentPath===path}
+                    onactive={checkCurrentPath===path} 
+                    onClick={onClickMenuIcon}
                     >
-                      <AnchorTag href="#contact">{name}</AnchorTag>
-                       
+                      {name}
                     </NavItems>
+                    </AnchorTag>
                     );
                   }
                   return (
+                    <StyledLink to={path}>
                   <NavItems 
                   key={id} 
-                  onactive={checkCurrentPath===path}
+                  onactive={checkCurrentPath===path} 
                   >
-                    <StyledLink to={path}>{name}</StyledLink> 
+                    {name}
                 </NavItems>
+                </StyledLink> 
                 );
               })
             }
@@ -84,24 +88,25 @@ const Header = () => {
                     navHeaderData.map(({id, name, path})=>{
                       if (id === 6){
                         return (
+                          <AnchorTag href="#contact">
                           <NavItems 
-                          key={id}>
-                            <AnchorTag href="#contact">{name}</AnchorTag>
-                            
+                          key={id} >
+                            {name}
                           </NavItems>
+                          </AnchorTag>
 
                         )
 
                       }
                       return(
+                        <StyledLink to={path}>
                         <NavItems 
                         key={id} 
                         onactive={checkCurrentPath===path}
                         >   
-                        <StyledLink to={path}>
-                        {name}
-                        </StyledLink>                     
+                        {name}                   
                         </NavItems>
+                        </StyledLink>  
 
                       )
 
