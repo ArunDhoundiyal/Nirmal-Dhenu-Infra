@@ -71,7 +71,7 @@ const Footer = () => {
                     <AnchorTag href='https://www.facebook.com/people/Nirmal-Dhenu-Infra/61575368651747/'>
                     <FacebookIcon/>
                     </AnchorTag>
-                    <AnchorTag>
+                    <AnchorTag href='https://www.youtube.com/@NirmalDhenuInfra'>
                     <YoutubeIcon/> 
                     </AnchorTag>
                 </FollowUsIconContainer>

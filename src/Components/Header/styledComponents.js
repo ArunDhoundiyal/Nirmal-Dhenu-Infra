@@ -1,8 +1,45 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {Link} from 'react-router-dom';
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+
+const infiniteScroll = keyframes`
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* Because we have two spans now */
+  }
+`;
+
+export const FlashHeadLineContainer = styled.div`
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height:25px;
+  width: 100%;
+  background-color: #c84241;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  overflow: hidden;
+  z-index:2;
+`;
+
+export const HeadLine = styled.div`
+  display: inline-flex;
+
+  white-space: nowrap;
+  animation: ${infiniteScroll} 30s linear infinite;
+  cursor: pointer;
+  span {
+    padding-right: 100px; 
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+`;
 
 export const AnchorTag = styled.a`
 text-decoration:none;
@@ -15,12 +52,14 @@ color:inherit;
 `;
 export const HeaderComponents = styled.header`
 position:fixed;
-top:0;  
+top:25px;  
 width:100%;
 background-color: #2A491D;
 height:100px;
 z-index:2;
-`
+`;
+
+
 
 export const Navbar = styled.nav`
 display:flex;

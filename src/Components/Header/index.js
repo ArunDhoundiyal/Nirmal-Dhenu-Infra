@@ -16,7 +16,9 @@ import {
     CompanyName, 
     Description, 
     StyledLink, 
-    AnchorTag
+    AnchorTag, 
+    FlashHeadLineContainer, 
+    HeadLine
 } from './styledComponents';
 import {navHeaderData} from '../Data';
 const Header = () => {
@@ -29,7 +31,6 @@ const Header = () => {
     }
     return(
         <HeaderComponents>
-          
         <Navbar>
             <StyledLink to='/'>
             <CompanyLogo 
@@ -114,6 +115,108 @@ const Header = () => {
                 }
             </NavListItems>
         </Navbar>
+        <FlashHeadLineContainer>
+          <HeadLine>
+          <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+          </span>
+          <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>   
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+          </span>
+          <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>   
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>            
+          </HeadLine>
+          <HeadLine>
+          <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+          </span>
+          <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>   
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+          </span>
+          <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>   
+            <span>
+            Site Marketed By Nirmal Dhenu 
+            Price - 4250 Per Sqft 
+            With 1.5% Return ROI 
+            For 33 Months From Registry.
+            </span>            
+          </HeadLine>
+        </FlashHeadLineContainer>
         </HeaderComponents>
 
     )

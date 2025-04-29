@@ -18,6 +18,7 @@ display: grid;
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 grid-auto-rows: 10px;
 gap: 20px;
+
 `;
 
 export const GalleryImageContainer = styled.div`
@@ -50,7 +51,7 @@ border-radius: 18px;
 `;
 export const GalleryHeading = styled.h1`
 color: #c84241;
-margin-top:120px;
+margin-top:140px;
 margin-left:20px;
 text-align:center;
 font-size:28px;
@@ -77,6 +78,7 @@ width:100%;
 height:100%;
 background-color: rgba(0, 0, 0, 0.4);
 z-index:10;
+overflow:auto;
 `;
 
 export const CrossIcon = styled(RxCross1)`
@@ -94,6 +96,7 @@ cursor:pointer;
 
 export const GalleryDetailedView = styled.div`
 background-color: #ffffff;
+overflow:auto;
 position:absolute;
 top:50%;
 left:50%;

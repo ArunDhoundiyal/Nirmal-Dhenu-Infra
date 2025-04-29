@@ -12,10 +12,11 @@ background-color: #ffffff;
 `;
 
 export const ProjectBannerContainer = styled.div`
-margin-top:100px;
+margin-top:125px;
   height: 50vh;
   width:100%;
   position:relative;
+  overflow:auto;
 `
 
 export const ProjectTagLineContainer = styled.div`
@@ -29,6 +30,7 @@ flex-direction:column;
 justify-content:center;
 padding:20px;
 background-color: rgba(0, 0, 0, 0.4);
+overflow:auto;
 `;
 
 export const ProjectImageBanner = styled.img`
@@ -166,6 +168,9 @@ left:0;
 export const Location = styled.h1`
 color: #ffffff;
 font-weight:500;
+@media screen and (max-width:500px){
+font-size:25px;
+}
 `
 
 export const ReadMoreButton = styled.button`

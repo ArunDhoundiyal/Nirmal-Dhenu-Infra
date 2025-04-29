@@ -12,10 +12,11 @@ overflow:auto;
 
 
 export const OurTeamContainer = styled.div`
-margin-top:100px;
+margin-top:125px;
   height: 50vh;
   width:100%;
   position:relative;
+  overflow:auto;
 `
 
 export const OurTeamTagLineContainer = styled.div`
@@ -29,6 +30,7 @@ flex-direction:column;
 justify-content:center;
 padding:20px;
 background-color: rgba(0, 0, 0, 0.4);
+overflow:auto;
 `;
 
 export const OurTeamImageBanner = styled.img`

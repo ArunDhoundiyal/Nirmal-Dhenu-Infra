@@ -8,11 +8,12 @@ background-size:cover;
 `
 
 export const AboutUsBanner = styled.div`
-margin-top:100px;
+margin-top:125px;
   height: 50vh;
   width:100%;
   position:relative;
-`
+  overflow:auto;
+`;
 
 export const AboutUsTagLineContainer = styled.div`
 position:absolute;
@@ -25,6 +26,7 @@ flex-direction:column;
 justify-content:center;
 padding:20px;
 background-color: rgba(0, 0, 0, 0.4);
+overflow:auto;
 `;
 
 export const AboutUsTagLine = styled.h1`

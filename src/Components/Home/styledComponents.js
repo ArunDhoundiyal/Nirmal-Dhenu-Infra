@@ -19,6 +19,7 @@ background-color:#FFFFFF;
 `;
 
 export const HomeBackgroundImg = styled.div`
+overflow:auto;
 background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1743657594/land-plot-with-nature-landscape-location-pin_11zon_h3db8o.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,8 +80,9 @@ background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v174365
 export const HomeBackgroundImgContentContainer = styled.div`
 background-color: rgba(0, 0, 0, 0.4);
 position:absolute;
-top:100px;
-height: calc(100vh - 100px);
+top:125px;
+height: calc(100% - 125px);
+overflow:auto;
 padding:0 50px;
 width:100%;
 left:0;
@@ -177,6 +179,7 @@ font-size:15px;
 
 
 export const ContactUsButton = styled.button`
+
 display:flex;
 justify-content:center;
 align-items:center;
@@ -188,6 +191,7 @@ color:#ffffff;
 font-size:25px;
 font-weight:bold;
 margin-top:20px;
+margin-bottom:20px;
 border:solid 4px #ffffff;
 cursor:pointer;
 transform:scale(1);
@@ -354,7 +358,6 @@ align-items:center;
 export const DisplayListItem = styled.li`
 display:flex;
 flex-direction:column;
-justify-content:space-around;
 align-items:center;
 padding:8px;
 white-space: normal;
@@ -364,15 +367,20 @@ width:100%;
 export const ImageContainer = styled.div`
 position:relative;
 height:300px;
-width:300px;
-@media screen and (max-width:450px){
+width:400px;
+@media screen and (max-width:600px){
 height:200px;
-width:200px;
+width:400px;
 }
-@media screen and (max-width:350px){
-height:150px;
-width:150px;
+@media screen and (max-width:550px){
+height:200px;
+width:350px;
 }
+@media screen and (max-width:500px){
+height:200px;
+width:100%;
+}
+
 `;
 
 export const Img = styled.img`
@@ -446,13 +454,16 @@ flex-direction:column;
 align-items:center;
 margin:12px;
 width:100%;
+@media screen and (max-width:500px){
+height:200px;
+}
+
 `;
 
 export const ImageGalleryContainer = styled.div`
 position:relative;
 height:300px;
 width:100%;
-margin:12px;
 z-index:1;
 `;
 
@@ -523,6 +534,9 @@ width:450px;
 }
 @media screen and (max-width:700px){
 width:100%;
+}
+@media screen and (max-width:500px){
+height:200px;
 }
 `;
 

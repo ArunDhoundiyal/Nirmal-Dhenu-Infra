@@ -28,11 +28,12 @@ import {
     ComingSoonSpan, 
     ComingSoonMsg, 
     BoldSpan, 
-    CompanyLogoContainer, 
     Img, 
     BackButton, 
     BackArrowIcon, 
-    ProjectDetailContentCon
+    ProjectDetailContentCon, 
+    ProjectImageCarausalListItemContainer, 
+    DispalyProjectId
     
 } from './styledComponent';
 import {projectDetailInformation} from '../Data';
@@ -75,6 +76,10 @@ const ProjectDetailedPage = () => {
                                 image.map(({id, img})=>(
                                     <ProjectImageCarausalListItem isactive={displayImg}>
                                         <ProjectCarausalImg src={img} alt={`${id}-project-carausal-img`} onClick={()=>onClickCarausalImage(id)} />
+                                        <ProjectImageCarausalListItemContainer isactive={displayImg===id}>
+                                            <DispalyProjectId isactive={displayImg===id}>{id}</DispalyProjectId>
+
+                                        </ProjectImageCarausalListItemContainer>
                                     </ProjectImageCarausalListItem>
                                 ))
                             }
@@ -125,10 +130,7 @@ const ProjectDetailedPage = () => {
                 :
                 (
                     <ComingSoonMsgContainer data-aos="zoom-in">
-                        <CompanyLogoContainer data-aos="zoom-in">
                         <Img src='https://res.cloudinary.com/da52fiag8/image/upload/v1743677603/Nirmal_dhenu_RE_white_bg_logo_roe2pd.png' alt='nirmal-dhenu-infra-company-logo' />
-                        </CompanyLogoContainer>
-                        
                         <ComingSoonHeading data-aos="zoom-in">
                         Coming <ComingSoonSpan>Soon</ComingSoonSpan>  
                         </ComingSoonHeading>

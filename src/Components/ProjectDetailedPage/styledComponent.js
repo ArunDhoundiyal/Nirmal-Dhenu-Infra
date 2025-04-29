@@ -21,14 +21,14 @@ background-color: #ffffff;
 `;
 
 export const ProjectDetailedContainer = styled.div`
-margin-top:100px;
-height:calc(100% - 100px);  
+margin-top:125px;
+height:calc(100% - 125px);  
 padding:12px;
 `;
 
 export const ComingSoonMsgContainer = styled.div`
-margin-top:100px;
-height:calc(100vh - 100px);
+margin-top:125px;
+height:calc(100% - 125px);
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -49,12 +49,12 @@ position:relative;
 `;
 
 export const Img = styled.img`
-object-fit:fill;
-height:100%;
-width:100%;
-position:absolute;
-top:0;
-left:0;
+height:250px;
+width:250px;
+@media screen and (max-width:750px){
+height:200px;
+width:200px;
+}
 `;
 
 export const BackButton = styled.button`
@@ -229,6 +229,24 @@ cursor:pointer;
 flex-grow:1;
 flex-shrink:1;
 `;
+
+export const ProjectImageCarausalListItemContainer = styled.div`
+background-color:${({isactive})=>isactive?'rgba(0, 0, 0, 0.4)' : 'transparent'};
+position:${({isactive})=>isactive?'absolute' : 'static'};
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+`;
+
+export const DispalyProjectId = styled.h1`
+color: #ffffff;
+display:${({isactive})=>isactive?'block' : 'none'};
+`
 
 export const ProjectCarausalImg = styled.img`
 position:absolute;
