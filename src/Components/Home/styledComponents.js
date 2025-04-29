@@ -617,12 +617,15 @@ background-color:${(props)=>`${props.color}`};
 position:absolute;
 top:0;
 left:0;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
 width:100%;
 display:flex;
 flex-direction:column;
 justify-content:space-around;
 align-items:center;
-padding:12px;
+padding:8px;
+overflow:auto;
 `;
 
 export const TestimonialStartRatingNameContainer =styled.div`
@@ -657,7 +660,7 @@ font-weight:400;
 color: #ffffff;
 font-style: italic;
 @media screen and (max-width:750px){
- font-size:14px;
+ font-size:12px;
 }
 `;
 
@@ -665,9 +668,8 @@ export const TestimonialUserName = styled.h1`
 font-size:18px;
 color:${(props)=>`${props.color}`};
 font-style: italic;
-text-decoration:underline;
 @media screen and (max-width:750px){
- font-size:16px;
+ font-size:14px;
 }
 `;
 

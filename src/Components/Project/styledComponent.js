@@ -104,13 +104,11 @@ font-size:12px;
 `
 
 export const DisplayProjectImagesContainer = styled.div`
-// border:solid 2px yellow;
 display:flex;
 flex-direction:column;
 `;
 
 export const ProjectImagesContainer = styled.ul`
-// border: solid 2px blue;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -159,7 +157,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 export const ProjectImg = styled.img`
 width: 100%;
 height: 100%;
-object-fit: fill;
+object-fit: cover;
 position:absolute;
 top:0;
 left:0;
@@ -168,9 +166,6 @@ left:0;
 export const Location = styled.h1`
 color: #ffffff;
 font-weight:500;
-@media screen and (max-width:500px){
-font-size:25px;
-}
 `
 
 export const ReadMoreButton = styled.button`

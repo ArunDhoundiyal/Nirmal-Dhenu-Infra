@@ -41,7 +41,7 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 `;
 
 export const GalleryImage = styled.img`
-object-fit:fill;
+object-fit:cover;
 position:absolute;
 top:0;
 left:0;

@@ -117,7 +117,7 @@ display:none;
 }
 @media screen and (max-width:700px){
 position:fixed;
-top:100px;
+top:125px;
 right:0;
 height:100%;
 width:80%;
@@ -194,7 +194,7 @@ font-weight:bold;
 
 export const NirmalDhenuCompanyLogoContainer = styled.div`
   position: absolute;
-  bottom: 120px;
+  bottom: 140px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -203,6 +203,7 @@ export const NirmalDhenuCompanyLogoContainer = styled.div`
   justify-content:center;
   align-items:center;
   text-align:center;
+  
 `;
 
 export const CompanyName = styled.h1`
@@ -216,5 +217,5 @@ font-size:12px;
 `
 
 export const NirmalDhenuCompanyLogo = styled.img`
-  height: 200px;
+  height: 120px;
 `;
