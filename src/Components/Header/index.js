@@ -118,102 +118,54 @@ const Header = () => {
         <FlashHeadLineContainer>
           <HeadLine>
           <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+          Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
           </span>
           <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>   
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
           </span>
           <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+          Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>   
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>            
           </HeadLine>
           <HeadLine>
           <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+          Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
           </span>
           <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+          Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>   
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
           </span>
           <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+          Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>   
             <span>
-            Site Marketed By Nirmal Dhenu 
-            Price - 4250 Per Sqft 
-            With 1.5% Return ROI 
-            For 33 Months From Registry.
+            Site Marketed By Nirmal Dhenu Price - 4250 Per Sqft With 1.5% Return 1.5% Cash Back for 33 Months From Registry.
             </span>            
           </HeadLine>
         </FlashHeadLineContainer>

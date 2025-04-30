@@ -29,9 +29,8 @@ export const FlashHeadLineContainer = styled.div`
 
 export const HeadLine = styled.div`
   display: inline-flex;
-
   white-space: nowrap;
-  animation: ${infiniteScroll} 30s linear infinite;
+  animation: ${infiniteScroll} 60s linear infinite;
   cursor: pointer;
   span {
     padding-right: 100px; 
