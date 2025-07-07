@@ -1,3 +1,4 @@
+import {Helmet} from 'react-helmet-async';
 import ScrollToTop from '../ScrollToTop';
 import {
     OurTeamsBgContainer, 
@@ -43,6 +44,14 @@ import Footer from '../Footer';
 
 const OurTeams = () => {
     return(
+        <>
+        <Helmet>
+            <title>Our team - Nirmal Dhenu Infra</title>
+            <meta name='description' 
+            content="Discover genuine and verified land properties with Nirmal Dhenu Infra – your trusted partner in premium plot investments." 
+            />
+            <link rel='canonical' href='/our-team' />
+        </Helmet>
         <OurTeamsBgContainer>
             <Header/>
             <OurTeamContainer data-aos="zoom-in">
@@ -175,7 +184,7 @@ const OurTeams = () => {
             <ScrollToTop/>
             <Footer/>
         </OurTeamsBgContainer>
-
+</>
     )
 }
 

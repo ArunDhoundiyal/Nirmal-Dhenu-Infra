@@ -19,8 +19,9 @@ background-color:#FFFFFF;
 `;
 
 export const HomeBackgroundImg = styled.div`
+will-change: background-image;
 overflow:auto;
-background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1743657594/land-plot-with-nature-landscape-location-pin_11zon_h3db8o.jpg');
+background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img6_a9v6b2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   position:relative;
@@ -37,43 +38,39 @@ background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v174365
   animation-timing-function:ease-in-out;
   animation-play-state: running;
   animation-fill-mode: both;
-  cursor:pointer;
-  &:hover{
-  animation-play-state: paused;
-  }
   @keyframes change-image{
   100%,0%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1743657594/land-plot-with-nature-landscape-location-pin_11zon_h3db8o.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img6_a9v6b2.webp');
   }
   10%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744957756/beautiful-landscape-with-clear-sky_k12mcm.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266866/img2_p1cszg.webp');
   }
   20%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744957752/delimitation-land-plots-concept_1_ni7xkd.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266866/img4_qucqet.webp');
   }
   30%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744957754/land-plot-with-nature-landscape-location-pin_jrtzd1.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266866/img3_bwpfug.webp');
   }
   40%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744957757/land-plot-with-nature-landscape-location-pin_2_1_lsrxpb.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img5_qe5q1t.webp');
   }
   50%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744957756/beautiful-landscape-with-small-village_urfto8.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img8_arthbk.webp');
   }
   60%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744957741/land-plot-with-nature-landscape-location-pin_1_1_qvejhh.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img10_y963eu.webp');
   }
   70%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744883826/view-land-plot-real-estate-business-development_1_w2yjvo.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img9_em2l7h.webp');
   }
   80%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744962783/beautiful-landscape-with-delimitation-concept_trdbzw.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img6_a9v6b2.webp');
   }
   90%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744962783/land-plot-with-nature-landscape-location-pin_akjqzf.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266866/img2_p1cszg.webp');
   }  
   100%{
-  background-image: url('https://res.cloudinary.com/da52fiag8/image/upload/v1744963798/land-plot-with-nature-landscape-location-pin_1_yzqvtu.jpg');
+  background-image: url('https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266866/img4_qucqet.webp');
   }
   `;
 

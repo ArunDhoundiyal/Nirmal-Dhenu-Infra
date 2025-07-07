@@ -1,3 +1,4 @@
+import {Helmet} from 'react-helmet-async';
 import ScrollToTop from '../ScrollToTop';
 
 import {
@@ -22,10 +23,19 @@ import Footer from '../Footer';
 
 const AboutUs = () => {
     return(
+        <>
+        <Helmet>
+            <title>About Us - Nirmal Dhenu Infra</title>
+            <meta 
+            name="description" 
+            content="Discover genuine and verified land properties with Nirmal Dhenu Infra – your trusted partner in premium plot investments." 
+            />
+            <link rel="canonical" href='/about-us' />
+        </Helmet>
         <AboutUsBgConatiner>
             <Header/>
             <AboutUsBanner data-aos="zoom-in">
-                <AboutUsImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/da52fiag8/image/upload/v1744957754/land-plot-with-nature-landscape-location-pin_jrtzd1.jpg' alt='about-us-image' />
+                <AboutUsImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266865/img6_a9v6b2.webp' alt='about-us-image' />
                 <AboutUsTagLineContainer data-aos="zoom-in">
                     <AboutUsTagLine data-aos="zoom-in">Premium Real Estate | Trusted Land Investments</AboutUsTagLine>
                     <AboutUsTagLineDescription data-aos="zoom-in">Build your future on a foundation of trust and growth.</AboutUsTagLineDescription>
@@ -60,7 +70,7 @@ const AboutUs = () => {
             <Footer/>
             
         </AboutUsBgConatiner>
-
+</>
     )
 }
 

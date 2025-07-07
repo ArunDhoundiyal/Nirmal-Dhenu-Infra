@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Header from '../Header';
 import Footer from '../Footer';
 import ScrollToTop from '../ScrollToTop';
@@ -34,6 +35,14 @@ const Gallery = () => {
 
     }
     return(
+        <>
+        <Helmet>
+            <title>Gallery - Nirmal Dhenu Infra</title>
+            <meta name='description' 
+            content="Discover genuine and verified land properties with Nirmal Dhenu Infra – your trusted partner in premium plot investments." 
+            />
+            <link rel='canonical' href='/gallery' />
+        </Helmet>
         <GalleryBgContainer>
         <Header/>
             <GalleryHeading data-aos="zoom-in">Our Gallery</GalleryHeading>
@@ -77,6 +86,7 @@ const Gallery = () => {
             </GalleryDetailedViewContainer>        
         }
         </GalleryBgContainer>
+        </>
     )
 }
 

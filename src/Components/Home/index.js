@@ -1,4 +1,5 @@
 import {useNavigate} from 'react-router-dom';
+import {Helmet} from 'react-helmet-async';
 import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -93,10 +94,17 @@ const Home = () => {
       const navigate = useNavigate();
 
     return(
+        <>
+        <Helmet>
+            <title>Home - Nirmal Dhenu Infra</title>
+            <meta 
+            name="description" 
+            content="Discover genuine and verified land properties with Nirmal Dhenu Infra – your trusted partner in premium plot investments." 
+            />
+            <link rel="canonical" href='/' />
+        </Helmet>
         <BackgroundContainer>
-            {/*  */}
             <Header/>
-            {/*  */}
             <HomeBackgroundImg data-aos="zoom-in">
                 <HomeBackgroundImgContentContainer>
                 <CompanyLogo data-aos="zoom-in"
@@ -254,7 +262,7 @@ const Home = () => {
             <Footer/>
             <ScrollToTop/>
         </BackgroundContainer>
-        
+        </>
     )
 }
 

@@ -1,3 +1,4 @@
+import {Helmet} from 'react-helmet-async';
 import Header from '../Header';
 import Footer from '../Footer';
 import ScrollToTop from '../ScrollToTop';
@@ -31,13 +32,22 @@ const Project = () => {
 
     }
     return(
+        <>
+        <Helmet>
+            <title>Project - Nirmal Dhenu Infra</title>
+            <meta 
+            name='description' 
+            content="Discover genuine and verified land properties with Nirmal Dhenu Infra – your trusted partner in premium plot investments." 
+            />
+            <link rel="canonical" href='/project' />
+        </Helmet>
         <ProjectBgContainer>
             <Header/>
             <ProjectBannerContainer data-aos="zoom-in">
-            <ProjectImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/da52fiag8/image/upload/v1745502536/beautiful-landscape-delimitation-concept_itiv3a.jpg' alt='project-banner-img' />
+            <ProjectImageBanner data-aos="zoom-in" src='https://res.cloudinary.com/dflmaiwxo/image/upload/v1748266866/img2_p1cszg.webp' alt='project-banner-img' />
                 <ProjectTagLineContainer data-aos="zoom-in">
                     <ProjectTagLine data-aos="zoom-in">Turning Land into Landmarks</ProjectTagLine>
-                    <ProjectTagLineDescription data-aos="zoom-in">Crafting Iconic Spaces, One Plot at a Time</ProjectTagLineDescription>
+                    <ProjectTagLineDescription data-ao s="zoom-in">Crafting Iconic Spaces, One Plot at a Time</ProjectTagLineDescription>
                 </ProjectTagLineContainer>
             </ProjectBannerContainer>
             <ProjectContainer>
@@ -79,7 +89,7 @@ const Project = () => {
             <ScrollToTop/>
             <Footer/>
         </ProjectBgContainer>
-
+        </>
     )
 }
 

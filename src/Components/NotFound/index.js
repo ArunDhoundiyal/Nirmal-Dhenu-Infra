@@ -1,3 +1,5 @@
+import {Helmet} from 'react-helmet-async';
+
 import {
     NotFoundBgContainer,
     NotFoundContainer, 
@@ -14,6 +16,16 @@ import Footer from '../Footer';
 const NotFound = () => {    
     const navigate = useNavigate();
     return(
+        <>
+        <Helmet>        
+            <title>Not found - Nirmal Dhenu Infra</title>
+            <meta 
+            name='description' 
+            content="Discover genuine and verified land properties with Nirmal Dhenu Infra – your trusted partner in premium plot investments." 
+            />
+            <link rel='canonical' href='/*' />
+        </Helmet>
+
         <NotFoundBgContainer>
             <Header/>
             <NotFoundContainer data-aos="zoom-in">
@@ -26,7 +38,7 @@ const NotFound = () => {
             </NotFoundContainer>
             <Footer/>
         </NotFoundBgContainer>
-
+    </>
     )
 }
 
